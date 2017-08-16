@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CCurve.cs" />
+    <Compile Include="CPlotProperties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UCPlotView.cs">
       <SubType>UserControl</SubType>

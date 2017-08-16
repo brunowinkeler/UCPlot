@@ -28,11 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCPlotView));
             this.splitContainerHor = new System.Windows.Forms.SplitContainer();
             this.splitContainerVert = new System.Windows.Forms.SplitContainer();
             this.cplotView = new OxyPlot.WindowsForms.PlotView();
             this.cplotPGrid = new System.Windows.Forms.PropertyGrid();
             this.ctoolStrip = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
+            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerHor)).BeginInit();
             this.splitContainerHor.Panel1.SuspendLayout();
             this.splitContainerHor.Panel2.SuspendLayout();
@@ -41,11 +52,13 @@
             this.splitContainerVert.Panel1.SuspendLayout();
             this.splitContainerVert.Panel2.SuspendLayout();
             this.splitContainerVert.SuspendLayout();
+            this.ctoolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainerHor
             // 
             this.splitContainerHor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerHor.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainerHor.Location = new System.Drawing.Point(0, 0);
             this.splitContainerHor.Name = "splitContainerHor";
             this.splitContainerHor.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -75,17 +88,17 @@
             // 
             this.splitContainerVert.Panel2.Controls.Add(this.cplotPGrid);
             this.splitContainerVert.Size = new System.Drawing.Size(546, 320);
-            this.splitContainerVert.SplitterDistance = 340;
+            this.splitContainerVert.SplitterDistance = 360;
             this.splitContainerVert.TabIndex = 0;
             // 
             // cplotView
             // 
-            this.cplotView.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cplotView.BackColor = System.Drawing.SystemColors.Control;
             this.cplotView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cplotView.Location = new System.Drawing.Point(0, 0);
             this.cplotView.Name = "cplotView";
             this.cplotView.PanCursor = System.Windows.Forms.Cursors.Hand;
-            this.cplotView.Size = new System.Drawing.Size(340, 320);
+            this.cplotView.Size = new System.Drawing.Size(360, 320);
             this.cplotView.TabIndex = 0;
             this.cplotView.Text = "plotView1";
             this.cplotView.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
@@ -98,16 +111,105 @@
             this.cplotPGrid.LineColor = System.Drawing.SystemColors.ControlDark;
             this.cplotPGrid.Location = new System.Drawing.Point(0, 0);
             this.cplotPGrid.Name = "cplotPGrid";
-            this.cplotPGrid.Size = new System.Drawing.Size(202, 320);
+            this.cplotPGrid.Size = new System.Drawing.Size(182, 320);
             this.cplotPGrid.TabIndex = 0;
             // 
             // ctoolStrip
             // 
+            this.ctoolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3,
+            this.toolStripButton4,
+            this.toolStripSeparator1,
+            this.toolStripButton5,
+            this.toolStripButton6,
+            this.toolStripSplitButton1,
+            this.toolStripProgressBar1,
+            this.toolStripTextBox1});
             this.ctoolStrip.Location = new System.Drawing.Point(0, 0);
             this.ctoolStrip.Name = "ctoolStrip";
             this.ctoolStrip.Size = new System.Drawing.Size(546, 25);
             this.ctoolStrip.TabIndex = 0;
             this.ctoolStrip.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "toolStripButton2";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Text = "toolStripButton3";
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Text = "toolStripButton4";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton5
+            // 
+            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
+            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton5.Name = "toolStripButton5";
+            this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton5.Text = "toolStripButton5";
+            // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton6.Text = "toolStripButton6";
+            // 
+            // toolStripSplitButton1
+            // 
+            this.toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
+            this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripSplitButton1.Name = "toolStripSplitButton1";
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(32, 22);
+            this.toolStripSplitButton1.Text = "toolStripSplitButton1";
+            // 
+            // toolStripProgressBar1
+            // 
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 22);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
             // 
             // UCPlotView
             // 
@@ -125,6 +227,8 @@
             this.splitContainerVert.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerVert)).EndInit();
             this.splitContainerVert.ResumeLayout(false);
+            this.ctoolStrip.ResumeLayout(false);
+            this.ctoolStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -136,5 +240,15 @@
         private OxyPlot.WindowsForms.PlotView cplotView;
         private System.Windows.Forms.PropertyGrid cplotPGrid;
         private System.Windows.Forms.ToolStrip ctoolStrip;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
+        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
     }
 }

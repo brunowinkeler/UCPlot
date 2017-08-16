@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UCPlotTest
 {
-    public partial class Form1 : Form
+    public partial class UCPlotTest : Form
     {
-        public Form1()
+        public UCPlotTest()
         {
             InitializeComponent();
         }
